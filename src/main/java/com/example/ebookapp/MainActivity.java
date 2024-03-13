@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
+
+
        recyclerView =findViewById(R.id.recySubject);
        menu=findViewById(R.id.menu_icon);
         drawerLayout = findViewById(R.id.drawerLayout);
