@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -32,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
 
+        //remove status bar
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_main);
 
 
        recyclerView =findViewById(R.id.recySubject);
@@ -46,9 +48,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(manager);
 
 
-        list.add(new SubjectModel("Beginner"));
-        list.add(new SubjectModel("Intermediate"));
-        list.add(new SubjectModel("Advanced"));
+        list.add(new SubjectModel("Beginner", R.drawable.book));
+        list.add(new SubjectModel("Intermediate",R.drawable.intermediate_book_icon));
+        list.add(new SubjectModel("Advanced", R.drawable.advanced_level_book_icon));
 
         adapter = new SubjectAdaptor(this, list);
         recyclerView.setAdapter(adapter);

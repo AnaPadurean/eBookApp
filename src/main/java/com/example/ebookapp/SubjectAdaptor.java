@@ -1,9 +1,11 @@
 package com.example.ebookapp;
 
 import android.content.Context;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,7 +37,7 @@ public class SubjectAdaptor extends RecyclerView.Adapter<SubjectAdaptor.viewHold
         SubjectModel model= list.get(position);
 
         holder.subjectName.setText(model.getSubjectName());
-
+        holder.subjectImage.setImageResource(model.getImageResource());
 
     }
 
@@ -45,12 +47,17 @@ public class SubjectAdaptor extends RecyclerView.Adapter<SubjectAdaptor.viewHold
         return list.size();
     }
 
+
+
     public class viewHolder extends RecyclerView.ViewHolder {
 
         TextView subjectName;
+        ImageView subjectImage;
       public viewHolder(@NonNull View itemView) {
           super(itemView);
           subjectName  =itemView.findViewById(R.id.beginner);
+          subjectImage = itemView.findViewById(R.id.book_image_levels);
+
       }
   }
 
