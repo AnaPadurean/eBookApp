@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_without_logo"
+
     tools:context=".LoginPage">
     <TextView
         android:id="@+id/loginPage"
@@ -31,12 +32,11 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="547dp"
         android:layout_marginBottom="127dp"
-        android:background="@drawable/btn_background_yellow"
-        android:foreground="@drawable/btn_background_yellow"
+        android:background="@drawable/btn_background_light_green"
+
         android:text="Sign In"
         android:textAllCaps="false"
-        android:textColor="@color/dark_blue"
-
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
