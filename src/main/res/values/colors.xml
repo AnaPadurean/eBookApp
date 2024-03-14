@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="primary_yellow">#fbdd75</color>
+    <color name="turquoise">#2A9D8F</color>
+    <color name="dark_blue">#0e1935</color>
+    <color name="dark_yellow">#fbb44a</color>
+
 </resources>

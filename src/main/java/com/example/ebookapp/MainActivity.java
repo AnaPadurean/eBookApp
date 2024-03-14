@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView menu ;
     View header;
 
+    MenuItem item;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
        recyclerView =findViewById(R.id.recySubject);
        menu=findViewById(R.id.menu_icon);
+
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView= findViewById(R.id.navView);
         list =new ArrayList<>();
