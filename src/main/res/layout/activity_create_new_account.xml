@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
-            android:backgroundTint="@color/dark_yellow"
+
             android:hint="New Password"
             android:inputType="textPassword"
             android:padding="16dp"

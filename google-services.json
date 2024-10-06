@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1095274320801",
+    "project_id": "nlptestare",
+    "storage_bucket": "nlptestare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095274320801:android:d23abb496e09d76a58b1e0",
+        "android_client_info": {
+          "package_name": "com.example.ebookapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx4xBIT1Hyv61lIEEbY_P7_eiaPw65sKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
