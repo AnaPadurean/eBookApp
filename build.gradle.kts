@@ -41,12 +41,15 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.firebase.database)
     implementation(libs.firebase.firestore)
+    implementation(libs.androidx.cardview)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
     //noinspection UseTomlInstead
     implementation ("com.google.firebase:firebase-firestore:25.0.0")
+
+
 
     implementation("com.google.firebase:firebase-analytics")
 }
