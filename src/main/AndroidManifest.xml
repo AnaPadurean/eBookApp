@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
 
     <application
@@ -16,28 +18,34 @@
         tools:targetApi="31">
         <activity
             android:name=".forgot_password_page"
-            android:exported="false" />
+            android:exported="true" />
         <activity
-            android:name=".beginner_books_page"
-            android:exported="false" />
+            android:name=".BeginnerBooksPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BeginnerBook1EggsAndHam"
+            android:exported="true" />
         <activity
             android:name=".CreateNewAccount"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LoginPage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".FirstPageWithLoginBtn"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+         <activity
+             android:name=".MainActivity"
+             android:exported="true"/>
+        <activity
+            android:name=".DifficultyLevels"
+            android:exported="true"/>
+
     </application>
 
 </manifest>

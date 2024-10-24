@@ -12,6 +12,7 @@
 
         android:title="My Profile"
         android:id="@+id/my_profile"
+        android:color="@color/primary_yellow"
         android:icon="@drawable/baseline_account_circle_24"/>
 
     <item
