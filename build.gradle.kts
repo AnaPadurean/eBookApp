@@ -15,7 +15,6 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -34,6 +33,9 @@ android {
     }
 }
 
+
+
+
 dependencies {
 
     implementation(libs.appcompat)
@@ -46,10 +48,11 @@ dependencies {
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
-    //noinspection UseTomlInstead
     implementation ("com.google.firebase:firebase-firestore:25.0.0")
-
-
-
+    implementation ("jp.wasabeef:blurry:4.0.0")
+    implementation ("com.google.firebase:firebase-storage")
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
     implementation("com.google.firebase:firebase-analytics")
+    implementation ("com.github.mhiew:android-pdf-viewer:3.2.0-beta.3") // Use the latest version if availab
+    implementation("com.google.cloud:google-cloud-speech:1.29.0")
 }
