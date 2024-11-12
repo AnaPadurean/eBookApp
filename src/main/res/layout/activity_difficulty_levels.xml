@@ -1,4 +1,5 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,19 +8,20 @@
     tools:context=".DifficultyLevels">
 
     <!-- Beginner Card -->
-
     <androidx.cardview.widget.CardView
         android:id="@+id/beginnerCard"
-        android:layout_width="300dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:cardBackgroundColor="@color/primary_yellow"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="8dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/primary_yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,8 +32,8 @@
 
             <ImageView
                 android:id="@+id/beginner_book_icon"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/book" />
 
@@ -39,12 +41,22 @@
                 android:id="@+id/beginner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="Beginner"
-                android:textColor="@color/light_green"
-                android:textSize="20sp"
+                android:textColor="@color/primary_yellow"
+                android:textSize="18sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/beginner_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Suitable for new readers"
+                android:textColor="@color/primary_yellow"
+                android:textSize="14sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -52,16 +64,18 @@
     <!-- Intermediate Card -->
     <androidx.cardview.widget.CardView
         android:id="@+id/intermediateCard"
-        android:layout_width="300dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:cardBackgroundColor="@color/primary_yellow"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="8dp"
+        android:layout_marginTop="24dp"
+
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:background="@drawable/bg_without_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/beginnerCard">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,8 +86,8 @@
 
             <ImageView
                 android:id="@+id/intermediate_book_icon"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/intermediate_book_icon" />
 
@@ -81,12 +95,22 @@
                 android:id="@+id/intermediate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="Intermediate"
-                android:textColor="@color/light_green"
-                android:textSize="20sp"
+                android:textColor="@color/primary_yellow"
+                android:textSize="18sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/intermediate_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="For progressing readers"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -94,16 +118,18 @@
     <!-- Advanced Card -->
     <androidx.cardview.widget.CardView
         android:id="@+id/advancedCard"
-        android:layout_width="300dp"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        app:cardBackgroundColor="@color/primary_yellow"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="8dp"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/primary_yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/intermediateCard">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -114,8 +140,8 @@
 
             <ImageView
                 android:id="@+id/advanced_book_icon"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/advanced_level_book_icon" />
 
@@ -123,12 +149,22 @@
                 android:id="@+id/advanced"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:text="Advanced"
-                android:textColor="@color/light_green"
-                android:textSize="20sp"
+                android:textColor="@color/primary_yellow"
+                android:textSize="18sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/advanced_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Challenging for experts"
+                android:textColor="@color/primary_yellow"
+                android:textSize="14sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

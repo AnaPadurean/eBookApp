@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
-//        setContentView(R.layout.testfirebase);
+
 
 //        dataDisplayText = findViewById(R.id.dataDisplayText);
 //
@@ -96,19 +96,15 @@ public class MainActivity extends AppCompatActivity {
 //                        DocumentSnapshot document = task.getResult();
 //                        if (document.exists()) {
 //                            // Retrieve multiple fields
-//                            String field1 = document.getString("Brown bear, Brown bear, what do you see?");
-//                            String field2 = document.getString("Goodnight moon");
+//
 //                            String field3 = document.getString("Green Eggs and Ham");
 //                            // Add more fields as necessary
 //
 //                            // Concatenate the field values
-//                            String text = "Field 1: " + (field1 != null ? field1 : "N/A") + "\n" +
-//                                    "Field 2: " + (field2 != null ? field2 : "N/A") + "\n" +
-//                                    "Field 3: " + (field3 != null ? field3 : "N/A");
-//                            // Add more fields to the text as necessary
+//
 //
 //                            Log.d(TAG, "Text from Firestore: " + text);
-//                            dataDisplayText.setText(text);
+//                            dataDisplayText.setText(field3);
 //                        } else {
 //                            Log.d(TAG, "No such document");
 //                            dataDisplayText.setText("No such document");

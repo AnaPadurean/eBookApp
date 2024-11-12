@@ -11,12 +11,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class BeginnerBooksPageActivity extends AppCompatActivity {
 
     private ImageView menuIcon;
     private DrawerLayout drawerLayout;
-    private CardView bookOne;
+    private LinearLayout bookOne;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +26,7 @@ public class BeginnerBooksPageActivity extends AppCompatActivity {
 
         drawerLayout = findViewById(R.id.drawerLayout);
         menuIcon = findViewById(R.id.menu_icon);
-        bookOne = findViewById(R.id.book1_eggs);
+        bookOne = findViewById(R.id.read_eggsandham);
         bookOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
